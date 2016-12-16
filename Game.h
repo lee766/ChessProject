@@ -4,15 +4,15 @@
 class Game
 {
 	public:
-		Game(char* board);
+		Game(string board);
 		bool chessCheck(); // For the end of the project.
-		char* getBoard(); // returns the board.
+		string getBoard(); // returns the board.
 		string getLastMove(); // returns the last move.
 		void playMove(); // sends to the frontend the code between 0 - 8.
 		void switchTurn();
 		
 	private:
-		char* lastMove;
-		char* _board;
+		string lastMove;
+		string _board;
 		char _turn;
 };
